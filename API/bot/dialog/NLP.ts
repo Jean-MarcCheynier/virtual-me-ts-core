@@ -1,4 +1,6 @@
-interface INLP {
+import { IIntent } from "./Intent";
+
+export interface INLP {
   uuid: string;
   source: string;
   intents: IIntent[];
