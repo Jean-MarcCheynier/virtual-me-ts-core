@@ -1,0 +1,19 @@
+{
+  "name": "@virtual-me/virtual-me-ts-core",
+  "version": "1.0.0",
+  "description": "TS Types for the project virtual me ",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jean-MarcCheynier/virtual-me-ts-core.git"
+  },
+  "author": "jmcheynier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jean-MarcCheynier/virtual-me-ts-core/issues"
+  },
+  "homepage": "https://github.com/Jean-MarcCheynier/virtual-me-ts-core#readme"
+}
