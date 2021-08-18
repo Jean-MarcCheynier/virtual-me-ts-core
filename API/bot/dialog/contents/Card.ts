@@ -16,7 +16,11 @@ export enum CardAttributeType {
 
 export interface ICardSection {
   title: string;
-  attributes: { label: String, type: CardAttributeType, value: string }[];
+  attributes: {
+    label: String,
+    type: CardAttributeType,
+    value: string
+  }[];
 }
 
 export interface ICardButton extends IButton{}
@@ -28,6 +32,6 @@ export interface ICardContent {
   imageUrl: string;
   status: string;
   statusState: CardStatusState,
-  sections: ICardSection[];
+  sections?: ICardSection[];
   buttons: ICardButton[]
 }
