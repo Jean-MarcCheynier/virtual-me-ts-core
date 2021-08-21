@@ -2,9 +2,11 @@
   "name": "@virtual-me/virtual-me-ts-core",
   "version": "1.0.0",
   "description": "TS Types for the project virtual me ",
-  "main": "index.ts",
+  "main": "lib/index",
+  "types": "lib/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p .",
+    "preversion": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Jean-MarcCheynier/virtual-me-ts-core/issues"
   },
-  "homepage": "https://github.com/Jean-MarcCheynier/virtual-me-ts-core#readme"
+  "homepage": "https://github.com/Jean-MarcCheynier/virtual-me-ts-core#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
