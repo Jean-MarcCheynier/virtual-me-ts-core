@@ -7,6 +7,7 @@ export declare enum MessageType {
     TEXT = "text",
     CARD = "card",
     QUICK_REPLIES = "quickReplies",
+    BUTTONS = "buttons",
     CAROUSEL = "carousel",
     LIST = "list",
     PICTURE = "picture",
@@ -14,7 +15,8 @@ export declare enum MessageType {
 }
 export declare enum RecipientType {
     BOT = "bot",
-    USER = "user"
+    USER = "user",
+    SYSTEM = "system"
 }
 export interface IMessage<E> {
     type: MessageType;
@@ -27,6 +29,7 @@ export interface IMessage<E> {
         type: RecipientType;
         channelID?: string;
     };
+    translatable?: boolean;
     markdown?: boolean | string;
     delay?: number | string;
 }

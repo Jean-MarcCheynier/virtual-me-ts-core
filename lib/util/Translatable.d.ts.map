@@ -1,0 +1,1 @@
+{"version":3,"file":"Translatable.d.ts","sourceRoot":"","sources":["../../src/util/Translatable.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,WAAW,aAAa;IACpC,WAAW,EAAE;QACX,CAAC,GAAG,EAAE,MAAM,GAAG,GAAG,CAAA;KACnB,CAAC;IACF,IAAI,CAAC,EAAE,MAAM,CAAC;CACf"}
