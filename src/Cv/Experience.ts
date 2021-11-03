@@ -1,5 +1,6 @@
 import { ISkill } from ".";
 import ITranslatable from "../util/Translatable";
+import { IAddress } from "./Contact";
 
 export interface IExperience {
   title: ITranslatable,
@@ -9,17 +10,9 @@ export interface IExperience {
     logo: string
     name: string;
     type: string;
-    translation: ITranslatable
+    description: ITranslatable
   }
-  adress: {
-    line1: string;
-    line2: string;
-    zipCode: string,
-    city: string,
-    cityCode: string,
-    country: string,
-    countryCode: string
-  }
+  address: IAddress,
   description: ITranslatable,
   skills: ISkill[]
 }

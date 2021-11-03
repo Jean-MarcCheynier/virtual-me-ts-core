@@ -1,9 +1,11 @@
 
 import ITranslatable from '../util/Translatable';
+import { IAddress } from './Contact';
 
 export interface IDegree {
-  from: string;
-  to: string;
+  title: ITranslatable,
+  description: ITranslatable,
+  date: string;
   school: {
     name: string;
     type: string;
@@ -12,13 +14,5 @@ export interface IDegree {
       fr: string
     } 
   }
-  adress: {
-    line1: string;
-    line2: string;
-    zipCode: string,
-    city: string,
-    cityCode: string,
-    country: string,
-    countryCode: string
-  }
+  address: IAddress
 }

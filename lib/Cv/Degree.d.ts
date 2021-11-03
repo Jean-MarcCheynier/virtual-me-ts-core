@@ -1,7 +1,9 @@
 import ITranslatable from '../util/Translatable';
-export interface IDegree extends ITranslatable {
-    from: string;
-    to: string;
+import { IAddress } from './Contact';
+export interface IDegree {
+    title: ITranslatable;
+    description: ITranslatable;
+    date: string;
     school: {
         name: string;
         type: string;
@@ -10,14 +12,6 @@ export interface IDegree extends ITranslatable {
             fr: string;
         };
     };
-    adress: {
-        line1: string;
-        line2: string;
-        zipCode: string;
-        city: string;
-        cityCode: string;
-        country: string;
-        countryCode: string;
-    };
+    address: IAddress;
 }
 //# sourceMappingURL=Degree.d.ts.map

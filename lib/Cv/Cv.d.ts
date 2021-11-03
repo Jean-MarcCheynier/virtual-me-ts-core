@@ -1,11 +1,9 @@
 import { ISkill } from "./Skill";
 import { IDegree } from './Degree';
 import { IExperience } from './Experience';
+import { IInfo } from "./Info";
 export interface ICv {
-    photo: string;
-    name: string;
-    lastname: string;
-    situation: string;
+    infos: IInfo;
     skills: ISkill[];
     degrees: IDegree[];
     experiences: IExperience[];
