@@ -1,6 +1,6 @@
 {
   "name": "@virtual-me/virtual-me-ts-core",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "TS Types for the project virtual me ",
   "main": "lib/index",
   "types": "lib/index",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Jean-MarcCheynier/virtual-me-ts-core#readme",
   "devDependencies": {
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "intl": "^1.2.5"
   }
 }
