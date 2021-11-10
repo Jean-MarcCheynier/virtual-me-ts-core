@@ -10,7 +10,7 @@ export enum SkillType {
 }
 
 export interface ISkill extends ITranslatable {
-  name: ITranslatable,
+  name: string,
   level: LevelEnum,
   type: SkillType
 }

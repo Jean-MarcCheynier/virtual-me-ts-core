@@ -1,11 +1,12 @@
-import { IAddress } from "./Contact";
+import { IAddress, IContact } from "./Contact";
+import ITranslatable from '../util/Translatable';
 
 export interface IInfo {
   name: string;
   surname: string;
   dateOfBirth: string;
-  nationality: string;
-  nationalityLOCCODE: string;
-  contact: []
+  citizenship: ITranslatable;
+  citizenshipLOCCODE: string;
+  contact: [IContact]
   address: IAddress
 }

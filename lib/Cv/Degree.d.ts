@@ -5,6 +5,8 @@ export interface IDegree {
     description: ITranslatable;
     date: string;
     school: {
+        logo: string;
+        link: string;
         name: string;
         type: string;
         translation: {

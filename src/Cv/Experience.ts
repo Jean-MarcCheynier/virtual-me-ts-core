@@ -7,7 +7,8 @@ export interface IExperience {
   from: string,
   to: string,
   company: {
-    logo: string
+    logo: string;
+    link: string;
     name: string;
     type: string;
     description: ITranslatable
